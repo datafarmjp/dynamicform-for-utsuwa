@@ -17,4 +17,5 @@ System内の動的フォームフォルダを元に以下の点を変更いた�
 	- text、textareaはplaceholderとして
 	- それ以外はform-helper-text文として
 - thanks.htmlは利用しない形に修正
+- 見出し部分にid="entry"を追加
 
