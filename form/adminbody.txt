@@ -1,0 +1,26 @@
+お問い合わせがありました。
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+受付日時：%{Y}年%{n}月%{j}日 %{H}:%{i}:%{s}
+
+■お問い合わせ<!-- BEGIN_MODULE Form2_Unit -->
+お名前  : {name}
+メールアドレス  : \{email\}
+<!-- BEGIN column:loop --><!-- BEGIN text -->
+{label}  : \{form-unit-{utid}\}<!-- END text --><!-- BEGIN textarea -->
+{label}  : \{form-unit-{utid}\}<!-- END textarea --><!-- BEGIN radio -->
+{label}  : \{form-unit-{utid}\}<!-- END radio --><!-- BEGIN select -->
+{label}  : \{form-unit-{utid}\}<!-- END select --><!-- BEGIN checkbox -->
+{label}  : <!-- BEGIN\ form-unit-{utid}:loop -->\{form-unit-{utid}\} <!-- END\ form-unit-{utid}:loop --><!-- END checkbox -->
+<!-- END column:loop --><!-- END_MODULE Form2_Unit -->
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+--------------------------------------------------------------------------------------------------
+%{BLOG_NAME}
+<!-- BEGIN_MODULE Blog_Field ctx="bid/1" -->
+<!-- BEGIN zip:veil -->〒{zip}<!-- END zip:veil --><!-- BEGIN address:veil -->
+{address}<!-- END address:veil --><!-- BEGIN tel:veil -->
+TEL : {tel}{tel_time}<!-- END tel:veil -->
+<!-- END_MODULE Blog_Field -->
